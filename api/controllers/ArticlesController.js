@@ -5,8 +5,12 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
+const addArticle = require("./add-article");
+const viewAllArticles = require("./view-all-articles");
+const viewList = require("./view-list");
+
 module.exports = {
-  list: (req, res) => {
-    res.json({ message: "List of articles" });
-  },
+  Create: addArticle,
+  list: viewList,
+  view: viewAllArticles,
 };

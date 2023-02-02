@@ -9,6 +9,5 @@
  */
 
 module.exports.routes = {
-
-
+  //   "GET /articles/list": "view-list",
 };
